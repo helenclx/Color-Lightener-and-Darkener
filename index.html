@@ -3,40 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link rel="stylesheet" href="https://fonts.bunny.net/css?family=Noto+Sans">
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans"/>
 
         <title>Color Lightener and Darkener</title>
     </head>
-    <body> 
+    <body>
         <main>
             <h1 class="title">Color Lightener and Darkener</h1>
-            
+
             <label for="hex">Color (Hex)</label>
-            <input type="text" name="hex" id="hexInput" 
+            <input type="text" name="hex" id="hexInput"
             placeholder="#000000" value="#bf74f0"/>
-            
+
             <div class="toggle">
-                <p id="lightenText" 
+                <p id="lightenText"
                 class="toggle-text">Lighten</p>
                 <div id="toggleBtn" class="toggle-btn">
                     <div class="inner-circle"></div>
                 </div>
-                <p id="darkenText" 
+                <p id="darkenText"
                 class="toggle-text unselected">Darken</p>
             </div>
-            
+
             <label for="slider" id="sliderText">0%</label>
             <input type="range" min="0" max="100" value="0"
                 class="slider" id="slider" name="slider"></input>
-            
+
             <p>Input Color</p>
             <div id="inputColor" class="box"></div>
 
             <p id="alteredColorText">Altered Color</p>
             <div id="alteredColor" class="box"></div>
         </main>
-        
+
         <script src="index.js"></script>
     </body>
 </html>
